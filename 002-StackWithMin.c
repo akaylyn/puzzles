@@ -91,7 +91,7 @@ int min(Stack *stack)
 
 Node * createNode(int value)
 {
-   Node *newNode = (Node *)malloc(sizeof(Node));
+   Node *newNode = malloc(sizeof(Node));
 
    if (newNode == NULL) {
        printf("Error creating new node.\n");
@@ -105,7 +105,7 @@ Node * createNode(int value)
 
 Stack * createStack()
 {
-    Stack *newStack = (Stack *)malloc(sizeof(Stack));
+    Stack *newStack = malloc(sizeof(Stack));
 
     if (newStack == NULL) {
         printf("Error creating new stack.\n");
